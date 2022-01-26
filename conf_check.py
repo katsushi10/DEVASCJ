@@ -32,7 +32,7 @@ from cli import cli, clip
 import requests
 
 
-BACKUP_CONFIG_IOS_PATH = 'flash:/guest-shae/running-config.bak'
+BACKUP_CONFIG_IOS_PATH = 'flash:/guest-share/running-config.bak'
 
 WEB_HOSTS = [
     'https://www.cisco.com',
