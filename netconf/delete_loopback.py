@@ -69,14 +69,14 @@ netconf_data = netconf_interface_template.format(
 print("The configuration payload to be sent over NETCONF.\n")
 print(netconf_data)
 
-print("Opening NETCONF Connection to {}".format(env_lab.IOS_XE_1["host"]))
+print("Opening NETCONF Connection to {}".format(env_lab.DEVASC["host"]))
 
 # Open a connection to the network device using ncclient
 with manager.connect(
-        host=env_lab.IOS_XE_1["host"],
-        port=env_lab.IOS_XE_1["netconf_port"],
-        username=env_lab.IOS_XE_1["username"],
-        password=env_lab.IOS_XE_1["password"],
+        host=env_lab.DEVASC["host"],
+        port=env_lab.DEVASC["netconf_port"],
+        username=env_lab.DEVASC["username"],
+        password=env_lab.DEVASC["password"],
         hostkey_verify=False
         ) as m:
 
